@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background: #000066;
+      color: white;
+    }
+    
+    html,body{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+  }
+  
+  /*-----------services---------*/
+
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .title1-hr{
+    width: 230px;
+    text-align: center;
+    align-items: center;
+    line-height: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .title2-hr{
+    width: 400px;
+    text-align: center;
+    align-items: center;
+    line-height: 20px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+  
+    /*-----------footer---------*/
+  
+    #topBtn {
+      display: block;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: red;
+      color: white;
+      cursor: pointer;
+      border-radius: 4px;
+      padding: 10px;
+      margin: 20px;
+    }
+    
+    #topBtn:hover {
+      background-color: #555;
+    }
+  
+    .footer {
+      background: #000;
+      color: #8a8a8a;
+      font-size: 14px;
+      padding: 60px 0 20px;
+    }
+    
+    .footer-col-1 {
+      font-size: 15px;
+      text-align: center;
+      min-width: 250px;
+      margin-bottom: 20px;
+    }
+    
+    .footer-link {
+      color: white;
+      text-decoration: none;
+    }
+    
+    .footer-link:hover {
+      color: #cb2027;
+    }
+    
+    .footer hr {
+      border: none;
+      background: #b5b5b5;
+      height: 1px;
+      margin: 20px 0;
+    }
+    
+    .copyright {
+      text-align: center;
+    }
+
+      /*-----------cube---------*/
+
+h1 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 60px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.theme {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.cube {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+
+.cube div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.cube div span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#151515,#00ec00);
+    transform: rotateY(calc(90deg * var(--i)))translateZ(150px);
+    /* 300 / 2 = 150*/;
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: #151515;
+    transform: rotateX(90deg) translateZ(150px);
+}
+
+
+.top:hover {
+  transition: 0.7s;
+  color:#bb0000;
+  font-size: 65px;
+  text-shadow: 1px -1px #000,
+  2px -2px #000,
+  3px -3px #000,
+  4px -4px #000,
+  5px -5px #000,
+  6px -6px #000;
+
+}
+
+.b:hover {
+  transition: 0.7s;
+  color:#bb0000;
+  font-size: 65px;
+  text-shadow: 1px -1px #000,
+  2px -2px #000,
+  3px -3px #000,
+  4px -4px #000,
+  5px -5px #000,
+  6px -6px #000;
+}
+
+.c:hover {
+  transition: 0.7s;
+  color:#bb0000;
+  font-size: 65px;
+  text-shadow: 1px -1px #000,
+  2px -2px #000,
+  3px -3px #000,
+  4px -4px #000,
+  5px -5px #000,
+  6px -6px #000;
+}
+
+.d:hover {
+  transition: 0.7s;
+  color:#bb0000;
+  font-size: 65px;
+  text-shadow: 1px -1px #000,
+  2px -2px #000,
+  3px -3px #000,
+  4px -4px #000,
+  5px -5px #000,
+  6px -6px #000;
+}
+
+.e:hover {
+  transition: 0.7s;
+  color:#bb0000;
+  font-size: 62px;
+  text-shadow: 1px -1px #000,
+  2px -2px #000,
+  3px -3px #000,
+  4px -4px #000,
+  5px -5px #000,
+  6px -6px #000;
+}
